@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount unit for hunspell-dictionaries-1-7-2004, revision 2
+Before=snapd.service
+After=zfs-mount.service
+
+[Mount]
+What=/var/lib/snapd/snaps/hunspell-dictionaries-1-7-2004_2.snap
+Where=/snap/hunspell-dictionaries-1-7-2004/2
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=default.target multi-user.target

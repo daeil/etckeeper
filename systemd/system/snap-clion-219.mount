@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount unit for clion, revision 219
+Before=snapd.service
+After=zfs-mount.service
+
+[Mount]
+What=/var/lib/snapd/snaps/clion_219.snap
+Where=/snap/clion/219
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=default.target multi-user.target

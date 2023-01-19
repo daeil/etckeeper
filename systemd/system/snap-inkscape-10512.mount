@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount unit for inkscape, revision 10512
+Before=snapd.service
+After=zfs-mount.service
+
+[Mount]
+What=/var/lib/snapd/snaps/inkscape_10512.snap
+Where=/snap/inkscape/10512
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=default.target multi-user.target

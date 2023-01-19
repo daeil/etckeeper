@@ -1,0 +1,20 @@
+[Unit]
+Description=Rapid7 Insight Agent
+Before=runlevel1.target runlevel2.target runlevel3.target runlevel4.target runlevel5.target
+
+[Service]
+Type=simple
+RemainAfterExit=no
+PIDFile=/var/run/com.rapid7.ir_agent.pid
+ExecStart=/opt/rapid7/ir_agent/ir_agent
+Restart=on-failure
+RestartSec=2min
+KillMode=process
+KillSignal=SIGINT
+GuessMainPID=no
+User=root
+Group=root
+WorkingDirectory=/opt/rapid7/ir_agent
+
+[Install]
+WantedBy=default.target

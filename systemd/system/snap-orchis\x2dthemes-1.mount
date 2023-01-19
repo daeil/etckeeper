@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount unit for orchis-themes, revision 1
+Before=snapd.service
+After=zfs-mount.service
+
+[Mount]
+What=/var/lib/snapd/snaps/orchis-themes_1.snap
+Where=/snap/orchis-themes/1
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,21 @@
+127.0.0.1	localhost
+127.0.1.1	SEL-DKWON-L1
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+128.224.236.37  sel-cockpit2018.wrs.com
+128.224.236.41  sel-adp-prj.wrs.com
+
+#128.224.238.83 bitbucket.mobis.co.kr
+#128.224.239.63 confluence.mobis.co.kr sel-lsp-gerrit.wrs.com
+#128.224.238.184 jira.mobis.co.kr sel-lsp-jenkins.wrs.com
+
+#192.168.224.3  bitbucket.mobis.co.kr
+#192.168.224.4  confluence.mobis.co.kr sel-lsp-gerrit.wrs.com
+#192.168.224.6  jira.mobis.co.kr sel-lsp-jenkins.wrs.com mobis-lsp-polyspace.wrs.com
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount unit for core, revision 14399
+Before=snapd.service
+After=zfs-mount.service
+
+[Mount]
+What=/var/lib/snapd/snaps/core_14399.snap
+Where=/snap/core/14399
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=default.target multi-user.target

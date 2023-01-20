@@ -4,12 +4,12 @@ uuid=3ccbd3f2-80a1-34f0-8b9d-4f95178883a2
 type=ethernet
 autoconnect-priority=-999
 interface-name=eno1
-timestamp=1649741167
+timestamp=1674115753
 
 [ethernet]
 
 [ipv4]
-address1=128.224.239.53/23,128.224.239.1
+address1=128.224.238.82/23,128.224.238.1
 method=manual
 
 [ipv6]

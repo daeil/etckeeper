@@ -1,3 +1,4 @@
 #!/bin/sh
 
+systemctl --system start synergy.service
 exit 0

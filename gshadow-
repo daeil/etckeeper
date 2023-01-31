@@ -12,7 +12,7 @@ uucp:*::
 man:*::
 proxy:*::
 kmem:*::
-dialout:*::
+dialout:*::dkwon
 fax:*::
 voice:*::
 cdrom:*::dkwon

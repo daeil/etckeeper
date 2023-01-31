@@ -77,3 +77,4 @@ _ssh:x:118:
 docker:x:136:dkwon
 fwupd-refresh:x:137:
 tftp:x:138:
+_flatpak:x:139:
